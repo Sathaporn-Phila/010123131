@@ -16,6 +16,7 @@ class circle:
         self.y = x_and_y[1]
         circle.num_circle += 1
         self.num_circle = circle.num_circle
+    #find position of x and y
     def find_pos(r):
         width = 800
         height = 600
@@ -85,6 +86,7 @@ def check_biggest(alist):
 cyclic = []
 biggest = []
 pygame.init()
+#create N circles
 N = 10
 # create a screen of width=600 and height=600
 scr_w, scr_h = 800, 600
@@ -94,6 +96,7 @@ clock = pygame.time.Clock()
 running = True
 # create a new surface 
 surface = pygame.Surface( screen.get_size(), pygame.SRCALPHA )
+#create circle
 for item in range(1,N+1):
     create_circle(cyclic,item)
 while running:
