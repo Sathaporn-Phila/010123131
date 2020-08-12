@@ -522,7 +522,7 @@ def expression_tree(data_list):
                         data_in_rows[item] = item_class.booltype
                         stack.append(item)
                     elif item == item_class.name:
-                        stack.append(iem)
+                        stack.append(item)
             elif item in {'0','1'}:
                 if item == '0' :
                     if item == '0' and (item not in data_check_repeat):
@@ -705,7 +705,7 @@ while running :
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 running = False
-                pygame.image.save(screen,"truth table")
+                pygame.image.save(screen,"truth table.jpg")
             if e.type == KEYDOWN and e.key == K_RIGHT :
                 #reset data
                 case_target = case[0]
