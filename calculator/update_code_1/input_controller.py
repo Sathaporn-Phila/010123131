@@ -12,7 +12,7 @@ class Check_grammar :
     square = '^'
     open_bracket = '('
     close_bracket = ')'
-    type_of_case = {0:[0,1,4],1:[1,2,3,4,5],2:[1],3:[0,1],4:[0,1],5:[3,4]}
+    type_of_case = {0:[0,1,4],1:[1,2,3,4,5],2:[1],3:[0,1],4:[0,1],5:[3,4,5]}
     def __init__(self):
         self.no_text = True
         self.case_input = ''
@@ -103,7 +103,7 @@ class Check_grammar :
             return "Error type"
         else:
             return "Function type"
-            
+
     def change_case(self,value):
         self.case_input = value
 
